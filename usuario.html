@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
         }
+
         .container{
             display: flex;
             flex-direction: column;
@@ -31,7 +32,7 @@
         .perfil{
             text-align: center;
             padding: 20px;
-            display: inline-block;
+            display: inlineblock;
             background-color: rgb(247, 249, 249);
             border-radius: 100px;
             margin: 20px;
@@ -62,9 +63,11 @@
             border-radius: 30px;
             display: inline-block;
         }
+
         .content{
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-around ;
             text-align: center;
             font-size: 24px;
             gap: 60px;
@@ -78,14 +81,25 @@
             flex: 1 0 ;
             border-radius: 20px;
         }
-        
-        
+
+        .cerrarsesion{
+            background-color: rgb(244, 50, 50);
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            border-radius: 20px;
+            padding: 20px;
+            flex-wrap: nowrap;
+            width: 1500px;
+            height: 50px;
+        }
 
     </style>
 
-
 </head>
+
 <body>
+
     <div class="container">
         <div class="header">Header</div>
         <div class="perfil">
@@ -96,6 +110,7 @@
                 <p>Más de 25 años en la alta cocina.</p></div>
             <div class="editar-perfil">Editar Perfil</div>
         </div>
+
         <div class="content">
             <div class="card">Tus Recetas</div>
             <div class="card">Tus Favoritas</div>
@@ -103,9 +118,9 @@
             <div class="card">Opiniones</div>
             <div class="card">Privacidad</div>
             <div class="card">Configuración</div>
-            <div class="card cardDoble">Cerrar Sesión</div></div>
+            <div class="cerrarsesion">Cerrar Sesión</div>
         </div>
-        
+
         <div class="footer">Pie</div>
     </div>
 </body>
