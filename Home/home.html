@@ -1,130 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chef Connect - Cocina casera</title>
 
     <style>
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
+    
         ul {
             list-style: none;
         }
-
+    
         #logo a {
             text-decoration: none;
             color: rgb(0, 0, 0);
-
         }
-
+    
         .container {
             display: flex;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100vh;
         }
-
+    
         .menu {
             display: flex;
             gap: 10px;
-            margin: 20px;
-
+            margin-right: 20px;
         }
-
+    
+        .menu a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+    
         .header {
             background-color: rgb(194, 194, 194);
-            padding: 10px;
+            padding: 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
+    
         .content {
             flex: 1;
             background-color: white;
-            padding: 10px;
-        }
-
-        .cabecera {
-            background-color: rgb(235, 235, 235);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .content2 {
-            padding: 20px;
-            flex: 1;
-        }
-
-        .sobrenosotros {
-            width: 200px;
-            padding: 20px;
-        }
-
-        .footer {
-            display: flex;
-            gap: 10px;
-            background-color: rgb(230, 230, 230);
-            padding: 20px;
+            padding: 0;
             
         }
+    
+        .cabecera {
+            background-color: rgb(235, 235, 235);
+            padding: 200px 50px 200px 50px;
+            text-align: center;
+        }
+    
+        .content2 {
+            padding: 50px 100px 50px 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+    
+        .sobrenosotros {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+        }
+    
+        .sobrenosotros img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
 
+        .galeria {
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            gap: 15px;
+
+        }
+
+        .contentgalery {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(230, 230, 230);
+            padding: 30px;
+        }
+    
     </style>
 
 </head>
+
 <body>
 
     <div class="container">
 
         <div class="header">
-                <div id="logo"> <a href="./">Logo</a></div>
+            <div id="logo">
+                <a href="./">Logo</a>
+            </div>
 
+            <nav>
                 <ul class="menu">
-                    <li>Nosotros</li>
-                    <li>Recetas</li>
-                    <li>Registro</li>
-                    <li>Contacto</li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Recetas</a></li>
+                    <li><a href="#">Registro</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
-
+            </nav>
         </div>
 
         <div class="content">
 
             <div class="cabecera">
-                <h1>Aqui va el h1</h1>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fuga enim quibusdam repudiandae neque sapiente corrupti vel qui est, nisi doloribus odit eos quae a laudantium labore veniam. Libero, eum.
+                <h1>Aquí va el h1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fuga enim quibusdam repudiandae neque sapiente corrupti vel qui est, nisi doloribus odit eos quae a laudantium labore veniam. Libero, eum.</p>
+                <br>
+                <button href="./">¡Únete!</button>
             </div>
 
-            <div class="content2">
-
+            <dive class="content2">
                 <div class="sobrenosotros">
-                    <img src="img/equipo-chefconnect.jpg" alt="equipo-chefconnect">
-        
+                    <img src="img/equipo-chefconnect.jpg" alt="Equipo ChefConnect">
                 </div>
-    
+
                 <div class="sobrenosotros2">
                     <h2>¿Quiénes somos?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, unde odit quia, sed tenetur aperiam, modi labore vitae doloremque maxime voluptatum sequi fugiat culpa corrupti dignissimos magnam nemo atque. Officia!</p>
-    
+                    
+                </div>
             </div>
 
-            </div>
-
-            
-
-        <div class="footer">
-            Footer
         </div>
+
+        <div class="contentgalery">
+
+            <img class="galeria" id="ChefConnect1" src="img/equipo-chefconnect.jpg" alt="recetas">
+            <img class="galeria" id="ChefConnect1" src="img/equipo-chefconnect.jpg" alt="recetas">
+            <img class="galeria" id="ChefConnect1" src="img/equipo-chefconnect.jpg" alt="recetas">
+            <img class="galeria" id="ChefConnect1" src="img/equipo-chefconnect.jpg" alt="recetas">
+
+        </div>
+
+        <footer class="footer">
+            Footer
+        </footer>
 
     </div>
 
-
-
-    
 </body>
+
 </html>
