@@ -15,13 +15,30 @@
         .container {
             display: flex;
             flex-direction: column;
-            height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+        }
+
+
+        ul {
+            list-style: none;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            margin-right: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            padding: 5px;
+            color: #EAF2E3;
+            font-family: helvetica;
         }
 
         .header {
             background-color: #F25757;
-            padding: 10px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -32,34 +49,29 @@
             background-color: white;
             padding: 0;
             margin: 10px;
-            font-family: Arial, Helvetica, sans-serif;
         }
-
-        ul {
-            list-style: none;
-        }
-
-        .menu1 ul {
-            gap: 10px;
-            display: flex;
-            
-        }
-
-        .menu1 li a {
-            text-decoration: none;
-        }
-
-        .menufooter li a {
+    
+        .menufooter a {
             text-decoration: none;
             list-style: none;
-            
+            color: black;
+        }
+        .menufooter {
+            display: flex; /* Hacer el menú footer un flex container */
+            gap: 10px; /* Espaciado entre los elementos del menú (polit. priva., aviso legal...) */
+        }
+
+        .footer p {
+            margin-right: 20px;/* Ajusta el margen a la derecha del párrafo */
         }
 
         .footer {
             background-color: #F25757;
             display: flex;
             justify-content: center;
+            align-items: center;
             padding: 10px;
+            font-family: helvetica;
             font-size: small;
         }
 
@@ -68,15 +80,24 @@
 <body>
 
     <div class="container">
-        <div class="header">
-            <img src="../logo/LogoCCamarillo.png" alt="LogoCCamarillo" width="170px" height="130px">
 
-            <ul class="menu1">
-                <li><a href=".">Nosotros</a></li>
-                <li><a href=".">Recetas</a></li>
-                <li><a href=".">Registro</a></li>
-                <li><a href=".">Contacto</a></li>
-            </ul>
+        <div class="header">
+            <div class="logo">
+                <a href="home.html"></a>
+                <img src="../logo/LogoCCamarillo.png" alt="ChefConnect" width="170px" height="auto">
+            </div>
+            
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Recetas</a></li>
+                    <li><a href="#">Registro</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            
         </div>
 
         <div class="content">

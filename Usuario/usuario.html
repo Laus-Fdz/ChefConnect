@@ -94,6 +94,34 @@
             height: 50px;
         }
 
+        ul {
+            list-style: none;
+        }
+
+        .menufooter a {
+            text-decoration: none;
+            list-style: none;
+            color: black;
+        }
+        .menufooter {
+            display: flex; /* Hacer el menú footer un flex container */
+            gap: 10px; /* Espaciado entre los elementos del menú (polit. priva., aviso legal...) */
+        }
+
+        .footer p {
+            margin-right: 20px;/* Ajusta el margen a la derecha del párrafo */
+        }
+
+        .footer {
+            background-color: #F25757;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-family: helvetica;
+            font-size: small;
+        }
+
     </style>
 
 </head>
@@ -121,7 +149,17 @@
             <div class="cerrarsesion">Cerrar Sesión</div>
         </div>
 
-        <div class="footer">Pie</div>
+        
+        <div class="footer">
+            <p>Derechos de autor &copy 2024, Chef Connect.</p>
+            <div>
+                <ul class="menufooter">
+                    <li><a href="./Privacidad.html" target="_blank">Política de Privacidad</a></li>
+                    <li><a href="./UsoCookies.html" target="_blank">Uso de Cookies</a></li>
+                    <li><a href="./AvisoLegal.html" target="_blank">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
