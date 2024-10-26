@@ -16,6 +16,7 @@
             display: flex;
             flex-direction: column;
             height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .header {
@@ -31,12 +32,35 @@
             background-color: white;
             padding: 0;
             margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .menu1 ul {
+            gap: 10px;
+            display: flex;
+            
+        }
+
+        .menu1 li a {
+            text-decoration: none;
+        }
+
+        .menufooter li a {
+            text-decoration: none;
+            list-style: none;
+            
         }
 
         .footer {
             background-color: #F25757;
             display: flex;
             justify-content: center;
+            padding: 10px;
+            font-size: small;
         }
 
     </style>
@@ -47,16 +71,18 @@
         <div class="header">
             <img src="../logo/LogoCCamarillo.png" alt="LogoCCamarillo" width="170px" height="130px">
 
-            <ul class="menu">
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Recetas</a></li>
-                <li><a href="#">Registro</a></li>
-                <li><a href="#">Contacto</a></li>
+            <ul class="menu1">
+                <li><a href=".">Nosotros</a></li>
+                <li><a href=".">Recetas</a></li>
+                <li><a href=".">Registro</a></li>
+                <li><a href=".">Contacto</a></li>
             </ul>
         </div>
 
         <div class="content">
-            <p>Información jurídica</p>
+            <h2>Política de privacidad</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi atque rerum, fugiat magnam provident placeat vero veritatis illum! Asperiores consequatur enim dolore illum quibusdam illo quas placeat explicabo in atque?
+            Vero quisquam voluptatem facilis exercitationem labore qui quam iure officia amet, facere nisi dolorem id veritatis tenetur non! Qui, saepe nostrum quam eaque tempore labore vel perferendis quasi. Repellat, iusto!</p>
 
         </div>
 
@@ -64,9 +90,9 @@
             <p>Derechos de autor &copy 2024, Chef Connect.</p>
             <div>
                 <ul class="menufooter">
-                    <li><a href="#" target="_blank">Política de Privacidad</a></li>
-                    <li><a href="#" target="_blank">Uso de Cookies</a></li>
-                    <li><a href="#" target="_blank">Aviso Legal</a></li>
+                    <li><a href="./Privacidad.html" target="_blank">Política de Privacidad</a></li>
+                    <li><a href="./UsoCookies.html" target="_blank">Uso de Cookies</a></li>
+                    <li><a href="./AvisoLegal.html" target="_blank">Aviso Legal</a></li>
                 </ul>
             </div>
         </div>
