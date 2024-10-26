@@ -12,4 +12,5 @@ Fuentes (familia y tipografías):
 tipografía: Helvetica
 - h1: 60pt
 - h2: 40pt
+- h3: 24pt
 - p: 16pt
