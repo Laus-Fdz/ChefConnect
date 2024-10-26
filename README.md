@@ -7,3 +7,9 @@ Códigos colores paleta:
 - rojo=  f25757 / #F25757
 - amarillo= f2e863 / #F2E863
 - naranja=  f2cd60 / #F2CD60
+
+Fuentes (familia y tipografías):
+tipografía: Helvetica
+- h1: 60pt
+- h2: 40pt
+- p: 16pt

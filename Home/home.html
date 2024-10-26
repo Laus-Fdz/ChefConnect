@@ -12,96 +12,209 @@
             margin: 0;
             padding: 0;
         }
-    
+
+        .logotipo {
+            width: 150px;
+            height: auto;
+        }
+
+        h1 {
+            font-family: helvetica;
+            font-size: 60pt;
+            color: #F2E863;
+
+        }
+
+        h2 {
+            font-family: helvetica;
+            font-size: 40pt;
+            color: #F25757;
+        }
+
+        p {
+            font-family: Helvetica;
+        }
+
         ul {
             list-style: none;
         }
-    
-        #logo a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
+
+        .button {
+            background-color: #F2E863;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
         }
-    
+
+        .button:hover {
+            background-color: #F25757;
+            color: #F2E863;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
-    
+
         .menu {
             display: flex;
             gap: 10px;
             margin-right: 20px;
         }
-    
+
         .menu a {
             text-decoration: none;
-            color: black;
+            color: #EAF2E3;
             padding: 5px;
+            font-family: helvetica;
         }
-    
+
         .header {
-            background-color: rgb(194, 194, 194);
-            padding: 30px;
+            background-color: #F25757;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
         }
-    
+
         .content {
             flex: 1;
             background-color: white;
             padding: 0;
-            
-        }
-    
-        .cabecera {
-            background-color: rgb(235, 235, 235);
-            padding: 200px 50px 200px 50px;
-            text-align: center;
-        }
-    
-        .content2 {
-            padding: 50px 100px 50px 100px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            
-        }
-    
-        .sobrenosotros {
-            flex: 1;
-            max-width: 300px;
-            padding: 20px;
-        }
-    
-        .sobrenosotros img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
+
         }
 
-        .galeria {
-            width: 200px;
-            height: 200px;
+        .cabecera {
+
+            padding: 100px 100px 200px 100px;
+            text-align: center;
+            background-color: #F25757;
+        }
+
+        .cabecera p {
+            color: white;
+        }
+
+
+         /* Estilos para la sección de quiénes somos */
+
+        .content2 {
+            display: flex;
+            align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
+            padding: 100px 50px;
+            background-color: #EAF2E3;
+        }
+
+        .sobrenosotros {
+            flex: 1;
+            /* Asegura que la imagen ocupe una columna */
+
+        }
+
+        .sobrenosotros img {
+            max-width: 100%;
+            /* Limita el tamaño máximo de la imagen */
+            height: auto;
+            /* Mantiene la proporción de la imagen */
+            border-radius: 8px;
+            margin-left: 150px;
+        }
+
+        .sobrenosotros2 {
+            flex: 1;
+            /* Asegura que el texto ocupe la otra columna */
+            max-width: 500px;
+            /* Ancho máximo del texto */
+            margin-right: 50px;
+        }
+
+        /* Estilos para la sección de galería */
+
+        .galeria {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            /* mantiene las proporciones */
+            border-radius: 8px;
+            margin: 10px;
 
         }
 
         .contentgalery {
             display: flex;
             justify-content: center;
+            padding: 100px 0px 100px 0px;
+            flex-wrap: wrap;
+
         }
-    
+
+        /* Estilos para la sección de recetas */
+
+        .seccion-recetas {
+            flex: 1;
+            text-align: center;
+            padding: 0px 80px 100px 80px;
+
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .titulo-tarjeta {
+            font-size: 24px;
+            font-family: helvetica;
+            margin-bottom: 10px;
+            color: #F25757;
+        }
+
+        .texto-tarjeta {
+            font-size: 16px;
+            color: black;
+        }
+
+        /* Estilos para la sección de registro */
+
+        .seccion-perfil {
+            flex: 1;
+            text-align: center;
+            padding: 0px 80px 100px 80px;
+        }
+
         .footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(230, 230, 230);
+            background-color: #F25757;
             padding: 30px;
         }
-    
     </style>
 
 </head>
@@ -112,7 +225,9 @@
 
         <div class="header">
             <div id="logo">
-                <a href="./">Logo</a>
+                <a href="home.html">
+                <img class="logotipo" src="../logo/LogoCCamarillo.png" alt="ChefConnect">
+                </a>
             </div>
 
             <nav>
@@ -128,21 +243,32 @@
         <div class="content">
 
             <div class="cabecera">
-                <h1>Aquí va el h1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fuga enim quibusdam repudiandae neque sapiente corrupti vel qui est, nisi doloribus odit eos quae a laudantium labore veniam. Libero, eum.</p>
+                <h1>Cocina, comparte y disfruta</h1>
                 <br>
-                <button href="./">¡Únete!</button>
+                <p>Únete a nuestra comunidad de amantes de la cocina casera. Comparte tus mejores recetas, organiza
+                    intercambios de comidas y participa en desafíos culinarios para explorar nuevos sabores junto a
+                    personas con la misma pasión. En Chef Connect, cada plato es una oportunidad para conectar y
+                    aprender.
+                </p>
+                <br>
+                <button class="button" href="./">¿Te unes?</button>
             </div>
 
-            <dive class="content2">
+            <div class="content2">
                 <div class="sobrenosotros">
                     <img src="img/equipo-chefconnect.jpg" alt="Equipo ChefConnect">
                 </div>
 
                 <div class="sobrenosotros2">
-                    <h2>¿Quiénes somos?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, unde odit quia, sed tenetur aperiam, modi labore vitae doloremque maxime voluptatum sequi fugiat culpa corrupti dignissimos magnam nemo atque. Officia!</p>
-                    
+                    <h2>¿Qué es ChefConnect?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, unde odit quia, sed tenetur
+                        aperiam, modi labore vitae doloremque maxime voluptatum sequi fugiat culpa corrupti dignissimos
+                        magnam nemo atque. Officia!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fuga enim quibusdam
+                        repudiandae
+                        neque sapiente corrupti vel qui est, nisi doloribus odit eos quae a laudantium labore veniam. 
+                    </p>
+
                 </div>
             </div>
 
@@ -150,15 +276,58 @@
 
         <div class="contentgalery">
 
-            <img class="galeria" id="ChefConnect1" src="img/equipo-chefconnect.jpg" alt="recetas">
-            <img class="galeria" id="ChefConnect1" src="img/equipo-chefconnect.jpg" alt="recetas">
-            <img class="galeria" id="ChefConnect1" src="img/equipo-chefconnect.jpg" alt="recetas">
-            <img class="galeria" id="ChefConnect1" src="img/equipo-chefconnect.jpg" alt="recetas">
+            <img class="galeria" id="galeria1" src="img/chica-cocina-riendo.jpg" alt="recetas">
+            <img class="galeria" id="galeria2" src="img/chica-magdalena.jpg" alt="recetas">
+            <img class="galeria" id="galeria3" src="img/chica-sonriendo.jpg" alt="recetas">
+            <img class="galeria" id="galeria4" src="img/chico-cocinando.jpg" alt="recetas">
+
+        </div>
+
+        <div class="seccion-recetas">
+            <h2>Algunas de vuestras recetas</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, sequi ipsam vero soluta adipisci
+                accusamus voluptatem, praesentium illo quaerat quis facere quasi autem debitis ex perspiciatis quisquam
+                labore iure assumenda.</p>
+            
+            <!-- Contenedor de las tarjetas  -->
+             <div class="card-container">
+                <!-- Tarjeta 1 -->
+                 <div class="card"> 
+                    <img src="img/receta-tarta-manzana.jpg" alt="receta1">
+                    <div class="card-content"> 
+                        <h3 class="titulo-tarjeta">Tarta de Manzana</h3>
+                        <p class="texto-tarjeta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sunt repellendus nostrum, tempora laborum illo veritatis corporis! Ipsum recusandae iste dolor temporibus fuga sit deserunt ab odio, quis ipsa modi.</p>
+                    </div>
+                 </div>
+
+                 <div class="card">
+                    <img src="img/receta-magdalena.jpg" alt="receta2">
+                    <div class="card-content">
+                        <h3 class="titulo-tarjeta">Magdalenas de zanahoria</h3>
+                        <p class="texto-tarjeta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nesciunt dignissimos enim tenetur explicabo harum delectus soluta, deserunt eos illum animi itaque repellat doloremque voluptatibus nobis saepe, maiores, fuga nemo.</p>
+                    </div>
+                 </div>
+
+                 <div class="card">
+                    <img src="img/receta-crema-puerros.jpg" alt="receta3">
+                    <div class="card-content">
+                        <h3 class="titulo-tarjeta">Crema de puerro</h3>
+                        <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi quia consequuntur inventore. Quam enim blanditiis, fugit adipisci sit at dolor accusamus reprehenderit, maxime ullam, eos magni ad distinctio iure.</p>
+                    </div>
+                 </div>
+
+             </div>
+
+        </div>
+
+        <div class="seccion-perfil">
+            <h2>Crea tu perfil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquid iure ad eligendi vel nobis harum facilis molestiae repellat numquam molestias corporis quaerat, aspernatur, quibusdam deleniti, expedita fugit incidunt et.</p>
 
         </div>
 
         <footer class="footer">
-            Footer
+            Términos y Condiciones
         </footer>
 
     </div>
