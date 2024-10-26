@@ -13,15 +13,22 @@
             padding: 0;
         }
 
+        .logotipo {
+            width: 150px;
+            height: auto;
+        }
+
         h1 {
             font-family: helvetica;
             font-size: 60pt;
+            color: #F2E863;
 
         }
 
         h2 {
             font-family: helvetica;
             font-size: 40pt;
+            color: #F25757;
         }
 
         p {
@@ -32,9 +39,18 @@
             list-style: none;
         }
 
-        #logo a {
-            text-decoration: none;
-            color: #EAF2E3;
+        .button {
+            background-color: #F2E863;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #F25757;
+            color: #F2E863;
         }
 
         .container {
@@ -58,10 +74,11 @@
 
         .header {
             background-color: #F25757;
-            padding: 30px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
         }
 
         .content {
@@ -73,9 +90,13 @@
 
         .cabecera {
 
-            padding: 200px 50px 200px 50px;
+            padding: 100px 100px 200px 100px;
             text-align: center;
             background-color: #F25757;
+        }
+
+        .cabecera p {
+            color: white;
         }
 
 
@@ -204,7 +225,9 @@
 
         <div class="header">
             <div id="logo">
-                <a href="./">Logo</a>
+                <a href="home.html">
+                <img class="logotipo" src="../logo/LogoCCamarillo.png" alt="ChefConnect">
+                </a>
             </div>
 
             <nav>
@@ -221,13 +244,14 @@
 
             <div class="cabecera">
                 <h1>Cocina, comparte y disfruta</h1>
+                <br>
                 <p>Únete a nuestra comunidad de amantes de la cocina casera. Comparte tus mejores recetas, organiza
                     intercambios de comidas y participa en desafíos culinarios para explorar nuevos sabores junto a
                     personas con la misma pasión. En Chef Connect, cada plato es una oportunidad para conectar y
                     aprender.
                 </p>
                 <br>
-                <button href="./">¿Te unes?</button>
+                <button class="button" href="./">¿Te unes?</button>
             </div>
 
             <div class="content2">
