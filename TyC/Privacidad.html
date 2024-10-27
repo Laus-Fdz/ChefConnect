@@ -22,11 +22,16 @@
         h2 {
             font-family: helvetica;
             font-size: 40pt;
-            color: #F2E863;
+            color: black;
         }
 
         p {
             font-family: Helvetica;
+        }
+
+        .parrafoPP, .parrafoNC {
+            margin: 30px;
+            text-align: justify; 
         }
 
         .container {
@@ -61,11 +66,33 @@
             align-items: center;
         }
 
+        .cabecera {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .fotoprivacidad {
+            border: 2px solid lightgrey;
+            box-shadow: 0q 4px 8px rgba(0, 0, 0, 0.2); /*la sombra*/
+            display: flex; /* Hace que la caja solo ocupe el espacio necesario, no toda la línea.*/
+            justify-content: center;
+            margin: 20px auto; /* Centra la caja en su contenedor y le da un margen superior e inferior.*/
+            padding: 10px; /* Añade espacio entre el borde y la imagen */
+            border-radius: 8px;/* Añade un borde alrededor de la caja. Bordes redondeados */
+            max-width: 600px;/* Ancho máximo de la caja */
+            width: 100%; /* Hace que ocupe el 100% hasta el máximo especificado */
+            box-sizing: border-box;/* Incluye padding y border en el ancho total */
+        }
+
         .content {
             flex: 1;
             background-color: white;
-            padding: 0;
+            padding: 20px;
             margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horizontalmente */
         }
     
         .menufooter a {
@@ -80,6 +107,7 @@
 
         .footer p {
             margin-right: 20px;/* Ajusta el margen a la derecha del párrafo */
+            color: #EAF2E3;
         }
 
         .footer {
@@ -100,8 +128,7 @@
 
         <div class="header">
             <div class="logo">
-                <a href="home.html"></a>
-                <img src="../logo/LogoCCamarillo.png" alt="ChefConnect" width="170px" height="auto">
+                <a href="../Home/home.html"><img src="../logo/LogoCCamarillo.png" alt="ChefConnect" width="170px" height="auto"></a>
             </div>
             
 
@@ -113,20 +140,55 @@
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-            p ajcfkajb 
- 
-            
         </div>
 
         <div class="content">
-            <h1>Política de privacidad</h1>
-            <div> 
-                <img class="cabeceraPrivacidad" src="" alt="">
-            </div>
-            
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi atque rerum, fugiat magnam provident placeat vero veritatis illum! Asperiores consequatur enim dolore illum quibusdam illo quas placeat explicabo in atque?
-            Vero quisquam voluptatem facilis exercitationem labore qui quam iure officia amet, facere nisi dolorem id veritatis tenetur non! Qui, saepe nostrum quam eaque tempore labore vel perferendis quasi. Repellat, iusto!</p>
+            <div class="cabecera">
+                <h1>Política de privacidad</h1>
+                <br>
+                <div class="parrafoPP">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et distinctio officia aperiam ab officiis exercitationem sequi temporibus ullam recusandae neque nihil enim, porro cum nulla dignissimos facere! Animi, id!
+                    Voluptatibus aut placeat facere nobis temporibus non beatae nihil, totam cupiditate dolorum delectus nemo voluptate sed quam quia officia, ducimus consequuntur, amet distinctio enim deleniti obcaecati iusto odit? Quas, laboriosam!
+                    In fuga culpa eum corrupti. Veniam veritatis distinctio voluptatem soluta porro consequuntur ipsum officia exercitationem voluptas quam odio fugit perspiciatis aperiam libero fugiat nam necessitatibus dolore maxime, doloremque ea fuga.
+                    Esse atque provident maiores, sapiente assumenda ab eveniet, veritatis magnam beatae architecto commodi accusamus odio? Sunt quis est quasi quae recusandae iusto, sit modi animi quam adipisci facere nobis pariatur!
+                    Commodi cum recusandae sint sequi ipsam fugit aspernatur sunt, aliquid qui, veritatis officia ex! Facere porro et deserunt expedita, magni harum libero, nulla perspiciatis voluptatibus, inventore ipsum necessitatibus amet deleniti!</p>
+                </div>
+                
 
+                <br>
+                <h2>Nuestro compromiso</h2>
+
+                <div class="parrafoNC">
+                    <p>
+                    Ultima fecha de actualización: 27 de octubre de 2024.
+                    <br>
+                    <br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quod, reiciendis delectus voluptate quis, nihil laboriosam quos porro inventore quo explicabo, quae aut aliquam enim velit eius architecto rerum animi!
+                    Autem, eaque voluptatem ad illum voluptate ea sunt repellendus, quo illo sed in nisi nobis, odit enim porro voluptatum temporibus non! Nostrum enim molestiae nisi ipsa amet dignissimos impedit modi!
+                    Totam aliquam quam placeat illo provident fugiat, corporis autem, in eligendi eum corrupti magnam pariatur incidunt voluptatum nobis nam, aspernatur exercitationem. Expedita, accusamus. Itaque quod atque doloremque quis, enim quo.
+                    Sint labore ducimus, illum soluta, reiciendis debitis commodi eos inventore aspernatur ab reprehenderit repellendus consectetur voluptatibus. Aliquam nesciunt placeat omnis vero beatae ipsa delectus qui, quis voluptatum distinctio velit blanditiis.
+                    </p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam distinctio temporibus culpa atque reprehenderit, nemo, inventore in voluptatum amet eos ex iste! Similique dolorum blanditiis, expedita amet aut eligendi.
+                    Doloremque, debitis rem aliquid cumque sed sit facere itaque laudantium officiis qui consectetur eius nisi dolores ratione adipisci ut at? Reiciendis placeat dolore vel nihil harum saepe nam, repudiandae beatae.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, est necessitatibus sed laborum dignissimos porro dolorem quam officia tempora, distinctio, soluta omnis ea. Nisi debitis, non laboriosam laudantium voluptatem molestiae?
+                    </p>
+                    <br>
+                    <p>Vero harum, eligendi provident reiciendis pariatur sunt necessitatibus rerum in. Odio rerum dolores ex! Voluptates alias et neque, exercitationem fuga pariatur illum!
+                    Tempora debitis repellat quos excepturi laborum aliquam, explicabo consequatur, illum veritatis perferendis nisi quibusdam quo facilis aut fuga. Repellat omnis rerum natus voluptatum odit quae, ab modi corporis cumque similique.
+                    Dicta, tempore dolor! Cumque molestias eos odit accusamus deleniti commodi aliquam nobis amet deserunt temporibus non fugiat nesciunt excepturi adipisci quo ipsam perferendis nostrum, nulla esse mollitia pariatur, debitis dolorem!
+                    Fuga accusamus magni iusto laboriosam. Iusto saepe illum earum odit animi, quo ea? Mollitia veritatis, eaque fugit magni illum pariatur, magnam odio molestias maiores non impedit quisquam repellendus omnis illo.
+                    Esse, a quia. Saepe aspernatur repudiandae nulla impedit incidunt illo repellat asperiores ullam dolorum molestias tempore doloribus atque porro cumque voluptates reprehenderit esse eos voluptatum distinctio facilis, modi sunt. Consectetur?</p>
+                    <br>
+                    <!-- foto privacidad, tarjeta -->
+                    <div class="fotoprivacidad">
+                        <a href="../logo/fotoprivacidad.jpg"> <img src="../logo/fotoprivacidad.jpg" alt="ChefConnect" width="500px" height="auto"></a>
+                    </div>
+                   
+                </div>
+            </div>
         </div>
 
         <div class="footer">
