@@ -85,7 +85,6 @@
             flex: 1;
             background-color: white;
             padding: 0;
-
         }
 
         .cabecera {
@@ -217,15 +216,38 @@
             padding: 100px 80px 100px 80px;
         }
 
+        .menufooter a {
+            text-decoration: none;
+            list-style: none;
+            color: black;
+        }
+        .menufooter {
+            display: flex; /* Hacer el menú footer un flex container */
+            gap: 10px; /* Espaciado entre los elementos del menú (polit. priva., aviso legal...) */
+        }
+
+        .footer p {
+            margin-right: 20px;/* Ajusta el margen a la derecha del párrafo */
+        }
+
         .footer {
+            background-color: #F25757;
             display: flex;
             justify-content: center;
             align-items: center;
+
             background-color: #F25757;
             padding: 30px;
             color: #EAF2E3;
             font-family: helvetica;
+
+            padding: 10px;
+            font-family: helvetica;
+            font-size: small;
+
         }
+
+    
     </style>
 
 </head>
@@ -352,9 +374,16 @@
 
         </div>
 
-        <footer class="footer">
-            Términos y Condiciones
-        </footer>
+        <div class="footer">
+            <p>Derechos de autor &copy 2024, Chef Connect.</p>
+            <div>
+                <ul class="menufooter">
+                    <li><a href="../TyC/Privacidad.html" target="_blank">Política de Privacidad</a></li>
+                    <li><a href="../TyC/UsoCookies.html" target="_blank">Uso de Cookies</a></li>
+                    <li><a href="../TyC/AvisoLegal.html" target="_blank">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
 
     </div>
 
