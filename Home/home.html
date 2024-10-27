@@ -48,6 +48,11 @@
             font-size: 16px;
         }
 
+        a {
+            text-decoration: none;
+            font-family: helvetica;
+        }
+
         .button:hover {
             background-color: #F25757;
             color: #F2E863;
@@ -96,10 +101,11 @@
 
         .cabecera p {
             color: white;
+            padding: 0px 100px 50px 100px;
         }
 
 
-         /* Estilos para la sección de quiénes somos */
+        /* Estilos para la sección de quiénes somos */
 
         .content2 {
             display: flex;
@@ -143,14 +149,15 @@
             border-radius: 8px;
             margin: 10px;
 
+
         }
 
         .contentgalery {
             display: flex;
             justify-content: center;
-            padding: 100px 0px 100px 0px;
+            padding: 0px 0px 100px 0px;
             flex-wrap: wrap;
-
+            background-color: #EAF2E3;
         }
 
         /* Estilos para la sección de recetas */
@@ -158,8 +165,13 @@
         .seccion-recetas {
             flex: 1;
             text-align: center;
-            padding: 0px 80px 100px 80px;
+            padding: 100px 200px 100px 200px;
+            background-color: #F25757;
+            color: #EAF2E3;
+        }
 
+        .seccion-recetas h2 {
+            color: #F2E863;
         }
 
         .card-container {
@@ -167,6 +179,8 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
+            padding: 40px 0px 0px 0px;
+
         }
 
         .card {
@@ -204,7 +218,8 @@
         .seccion-perfil {
             flex: 1;
             text-align: center;
-            padding: 0px 80px 100px 80px;
+            padding: 100px 200px 100px 200px;
+            background-color: #EAF2E3;
         }
 
         .menufooter a {
@@ -226,9 +241,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            background-color: #F25757;
+            padding: 30px;
+            color: #EAF2E3;
+            font-family: helvetica;
+
             padding: 10px;
             font-family: helvetica;
             font-size: small;
+
         }
 
     
@@ -243,7 +265,7 @@
         <div class="header">
             <div id="logo">
                 <a href="home.html">
-                <img class="logotipo" src="../logo/LogoCCamarillo.png" alt="ChefConnect">
+                    <img class="logotipo" src="../logo/LogoCCamarillo.png" alt="ChefConnect">
                 </a>
             </div>
 
@@ -251,7 +273,7 @@
                 <ul class="menu">
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Recetas</a></li>
-                    <li><a href="#">Registro</a></li>
+                    <li><a href="../Usuario/usuario.html">Registro</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
@@ -264,11 +286,11 @@
                 <br>
                 <p>Únete a nuestra comunidad de amantes de la cocina casera. Comparte tus mejores recetas, organiza
                     intercambios de comidas y participa en desafíos culinarios para explorar nuevos sabores junto a
-                    personas con la misma pasión. En Chef Connect, cada plato es una oportunidad para conectar y
+                    personas con la misma pasión. <br> En Chef Connect, cada plato es una oportunidad para conectar y
                     aprender.
                 </p>
                 <br>
-                <button class="button" href="./">¿Te unes?</button>
+                <a href="../Usuario/usuario.html" class="button">¿Te únes?</a>
             </div>
 
             <div class="content2">
@@ -283,8 +305,10 @@
                         magnam nemo atque. Officia!
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fuga enim quibusdam
                         repudiandae
-                        neque sapiente corrupti vel qui est, nisi doloribus odit eos quae a laudantium labore veniam. 
+                        neque sapiente corrupti vel qui est, nisi doloribus odit eos quae a laudantium labore veniam.
                     </p>
+                    <br>
+                    <a href="./" class="button">Ver más</a>
 
                 </div>
             </div>
@@ -305,41 +329,58 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, sequi ipsam vero soluta adipisci
                 accusamus voluptatem, praesentium illo quaerat quis facere quasi autem debitis ex perspiciatis quisquam
                 labore iure assumenda.</p>
-            
-            <!-- Contenedor de las tarjetas  -->
-             <div class="card-container">
-                <!-- Tarjeta 1 -->
-                 <div class="card"> 
-                    <img src="img/receta-tarta-manzana.jpg" alt="receta1">
-                    <div class="card-content"> 
-                        <h3 class="titulo-tarjeta">Tarta de Manzana</h3>
-                        <p class="texto-tarjeta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sunt repellendus nostrum, tempora laborum illo veritatis corporis! Ipsum recusandae iste dolor temporibus fuga sit deserunt ab odio, quis ipsa modi.</p>
-                    </div>
-                 </div>
 
-                 <div class="card">
+            <!-- Contenedor de las tarjetas  -->
+            <div class="card-container">
+                <!-- Tarjeta 1 -->
+                <div class="card">
+                    <img src="img/receta-tarta-manzana.jpg" alt="receta1">
+                    <div class="card-content">
+                        <h3 class="titulo-tarjeta">Tarta de Manzana</h3>
+                        <p class="texto-tarjeta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sunt
+                            repellendus nostrum, tempora laborum illo veritatis corporis! Ipsum recusandae iste dolor
+                            temporibus fuga sit deserunt ab odio, quis ipsa modi.</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
                     <img src="img/receta-magdalena.jpg" alt="receta2">
                     <div class="card-content">
                         <h3 class="titulo-tarjeta">Magdalenas de zanahoria</h3>
-                        <p class="texto-tarjeta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nesciunt dignissimos enim tenetur explicabo harum delectus soluta, deserunt eos illum animi itaque repellat doloremque voluptatibus nobis saepe, maiores, fuga nemo.</p>
+                        <p class="texto-tarjeta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+                            nesciunt dignissimos enim tenetur explicabo harum delectus soluta, deserunt eos illum animi
+                            itaque repellat doloremque voluptatibus nobis saepe, maiores, fuga nemo.</p>
                     </div>
-                 </div>
 
-                 <div class="card">
+                </div>
+
+                <div class="card">
                     <img src="img/receta-crema-puerros.jpg" alt="receta3">
                     <div class="card-content">
                         <h3 class="titulo-tarjeta">Crema de puerro</h3>
-                        <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi quia consequuntur inventore. Quam enim blanditiis, fugit adipisci sit at dolor accusamus reprehenderit, maxime ullam, eos magni ad distinctio iure.</p>
+                        <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                            nisi quia consequuntur inventore. Quam enim blanditiis, fugit adipisci sit at dolor
+                            accusamus reprehenderit, maxime ullam, eos magni ad distinctio iure.</p>
                     </div>
-                 </div>
 
-             </div>
+
+                </div>
+
+                <a href="../Blog/Recetas/recetas.html" class="button">Ver todas las recetas</a>
+
+            </div>
 
         </div>
 
         <div class="seccion-perfil">
-            <h2>Crea tu perfil</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquid iure ad eligendi vel nobis harum facilis molestiae repellat numquam molestias corporis quaerat, aspernatur, quibusdam deleniti, expedita fugit incidunt et.</p>
+            <h2>¡Crea tu perfil!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquid iure ad eligendi vel nobis harum
+                facilis molestiae repellat numquam molestias corporis quaerat, aspernatur, quibusdam deleniti, expedita
+                fugit incidunt et.</p>
+                <br>
+                <br>
+                <a href="../Usuario/usuario.html" class="button">Crear usuario</a>
 
         </div>
 
