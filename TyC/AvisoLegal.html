@@ -4,8 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviso Legal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+        ul {
+            list-style: none;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            margin-right: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            padding: 5px;
+            color: #EAF2E3;
+            font-family: helvetica;
+        }
+
+        .header {
+            background-color: #F25757;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content {
+            flex: 1;
+            background-color: white;
+            padding: 0;
+            margin: 10px;
+        }
+    
+        .menufooter a {
+            text-decoration: none;
+            list-style: none;
+            color: black;
+        }
+        .menufooter {
+            display: flex; /* Hacer el menú footer un flex container */
+            gap: 10px; /* Espaciado entre los elementos del menú (polit. priva., aviso) */
+        }
+
+        .footer p {
+            margin-right: 20px;/* Ajusta el margen a la derecha del párrafo */
+            color: black;
+        }
+
+        .footer {
+            background-color: #F25757;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-family: helvetica;
+            font-size: small;
+        }
+
+    </style>
 </head>
 <body>
     
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+                <a href="../Home/home.html"><img src="../logo/LogoCCamarillo.png" alt="ChefConnect" width="170px" height="auto"></a>
+            </div>
+            
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Recetas</a></li>
+                    <li><a href="#">Registro</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            
+        </div>
+
+        <div class="content">
+            <h2>Política de privacidad</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi atque rerum, fugiat magnam provident placeat vero veritatis illum! Asperiores consequatur enim dolore illum quibusdam illo quas placeat explicabo in atque?
+            Vero quisquam voluptatem facilis exercitationem labore qui quam iure officia amet, facere nisi dolorem id veritatis tenetur non! Qui, saepe nostrum quam eaque tempore labore vel perferendis quasi. Repellat, iusto!</p>
+
+        </div>
+
+        <div class="footer">
+            <p>Derechos de autor &copy 2024, Chef Connect.</p>
+            <div>
+                <ul class="menufooter">
+                    <li><a href="./Privacidad.html" target="_blank">Política de Privacidad</a></li>
+                    <li><a href="./UsoCookies.html" target="_blank">Uso de Cookies</a></li>
+                    <li><a href="./AvisoLegal.html" target="_blank">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
