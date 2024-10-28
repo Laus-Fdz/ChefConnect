@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>usuario zone</title>
+    <title>Chef Connect-user</title>
 
     <style>
 
@@ -19,20 +19,44 @@
             height: 100vh;
         }
 
-        .header{
-            background-color: burlywood;
-            color: black;
-            font-size: 16 px;
-            padding: 5px;
+        .header {
+            background-color: #F25757;
+            padding: 20px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            padding: 10px;
+        }
+        .logotipo {
+            width: 150px;
+            height: auto;
+        }
+        
+        .button:hover {
+            background-color: #F25757;
+            color: #F2E863;
+        }
+        .menu {
+            display: flex;
+            gap: 10px;
+            margin-right: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #EAF2E3;
+            padding: 5px;
+            font-family: helvetica;
+        }
+
+        
+        ul {
+            list-style: none;
         }
 
         .perfil{
             text-align: center;
             padding: 20px;
-            display: inlineblock;
+            display: inline-block;
             background-color: rgb(247, 249, 249);
             border-radius: 100px;
             margin: 20px;
@@ -47,13 +71,14 @@
             display: flex;
             justify-content:center;
             align-items: end;
-            
+            font-family: Helvetica;
         }
 
         .descripcion{
             margin: 20px;
             padding: 20px;
-            font-size: 20px;
+            font-size: 16px;
+            font-family: Helvetica;
         }
 
         .editar-perfil{
@@ -62,6 +87,8 @@
             width: 30;
             border-radius: 30px;
             display: inline-block;
+            font-family: Helvetica;
+            font-size: 16px ;
         }
 
         .content{
@@ -72,6 +99,8 @@
             font-size: 24px;
             gap: 60px;
             padding: 60px;
+            font-family: Helvetica;
+
         }
 
         .card{
@@ -94,10 +123,6 @@
             height: 50px;
         }
 
-        ul {
-            list-style: none;
-        }
-
         .menufooter a {
             text-decoration: none;
             list-style: none;
@@ -111,16 +136,22 @@
         .footer p {
             margin-right: 20px;/* Ajusta el margen a la derecha del párrafo */
         }
-
         .footer {
             background-color: #F25757;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            background-color: #F25757;
+            padding: 30px;
+            color: black;
+            font-family: helvetica;
+
             padding: 10px;
             font-family: helvetica;
             font-size: small;
         }
+
 
     </style>
 
@@ -129,7 +160,23 @@
 <body>
 
     <div class="container">
-        <div class="header">Header</div>
+        <div class="header">
+                <div id="logo">
+                    <a href="home.html">
+                        <img class="logotipo" src="../logo/LogoCCamarillo.png" alt="ChefConnect">
+                    </a>
+                </div>
+    
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Recetas</a></li>
+                        <li><a href="../Usuario/usuario.html">Registro</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            
+        </div>
         <div class="perfil">
             <img src="chicote.jpg" alt="img chicote">
             <div class="usuario"><strong>Chicote</strong></div>
@@ -149,16 +196,16 @@
             <div class="cerrarsesion">Cerrar Sesión</div>
         </div>
 
-        
         <div class="footer">
             <p>Derechos de autor &copy 2024, Chef Connect.</p>
             <div>
                 <ul class="menufooter">
-                    <li><a href="./Privacidad.html" target="_blank">Política de Privacidad</a></li>
-                    <li><a href="./UsoCookies.html" target="_blank">Uso de Cookies</a></li>
-                    <li><a href="./AvisoLegal.html" target="_blank">Aviso Legal</a></li>
+                    <li><a href="../TyC/Privacidad.html" target="_blank">Política de Privacidad</a></li>
+                    <li><a href="../TyC/UsoCookies.html" target="_blank">Uso de Cookies</a></li>
+                    <li><a href="../TyC/AvisoLegal.html" target="_blank">Aviso Legal</a></li>
                 </ul>
             </div>
+
         </div>
     </div>
 </body>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Connect - Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: #F25757;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logotipo {
+            width: 150px;
+            height: auto;
+        }
+    
+        .menu {
+            display: flex;
+            gap: 10px;
+            margin-right: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #EAF2E3;
+            padding: 5px;
+            font-family: Helvetica;
+        }
+        
+        ul {
+            list-style: none;
+        }
+    
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        fieldset {
+            border: 1px solid #61E8E1;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #F2E863;
+            border-radius: 5px;
+        }
+
+        .menufooter a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menufooter {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer p {
+            margin-right: 20px;
+        }
+
+        .footer {
+            background-color: #F25757;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            color: black;
+            font-family: Helvetica;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="logo">
+                <a href="home.html">
+                    <img class="logotipo" src="../logo/LogoCCamarillo.png" alt="ChefConnect">
+                </a>
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Recetas</a></li>
+                    <li><a href="../Usuario/usuario.html">Registro</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="form-container">
+            <form action="./registro.html" method="get">
+                <fieldset>
+                    <legend>Registro</legend>
+
+                    <!-- Nombre -->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
+
+                    <!-- Email -->
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required>
+
+                    <!-- Contraseña -->
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="pass" id="pass" required>
+
+                    <!-- Confirmar Contraseña -->
+                    <label for="pass2">Confirmar Contraseña</label>
+                    <input type="password" name="pass" id="pass2" required>
+
+                    <!-- Edad -->
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad" required>
+
+                    <!-- Género -->
+                    <div>
+                        <input type="radio" name="gender" value="male"> Hombre
+                        <input type="radio" name="gender" value="female"> Mujer
+                    </div>
+
+                    <!-- Enviar -->
+                    <input type="submit" value="ENTRAR">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>Derechos de autor &copy; 2024, Chef Connect.</p>
+            <div>
+                <ul class="menufooter">
+                    <li><a href="../TyC/Privacidad.html" target="_blank">Política de Privacidad</a></li>
+                    <li><a href="../TyC/UsoCookies.html" target="_blank">Uso de Cookies</a></li>
+                    <li><a href="../TyC/AvisoLegal.html" target="_blank">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
