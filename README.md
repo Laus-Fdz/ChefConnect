@@ -1,9 +1,9 @@
 # ChefConnect
  Proyecto de clase
 
-Laura Fernández Solano
-María Valcárcel Ruiz
-Lucía Vicente Cereijo
+- Laura Fernández Solano
+- María Valcárcel Ruiz
+- Lucía Vicente Cereijo
 
 Códigos colores paleta: 
 - beige= eaf2e3 /  #EAF2E3
