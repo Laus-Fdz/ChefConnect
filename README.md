@@ -20,19 +20,4 @@ tipografía: Helvetica
 - p: 16pt
 
 
-<div class="header">
-            <div id="logo">
-                <a href="home.html">
-                    <img class="logotipo" src="../logo/LogoCCamarillo.png" alt="ChefConnect">
-                </a>
-            </div>
 
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Recetas</a></li>
-                    <li><a href="../Usuario/usuario.html">Registro</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
